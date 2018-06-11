@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/css.css">
 </head>
 
 <body>
@@ -11,11 +12,32 @@
     <header class="main-header">
         <nav class="menu-headers">
             <img src="img/logo-devace.png" width="163" height="36" alt="логотип магазин Device">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                <img src="img/search.svg" width="16" height="16">
+                <input class="search-form-field" type="search" name="search" placeholder="Поиск по сайту">
+                <input type="submit" name="submit" value="Найти">
+            </form>
             <ul class="main-menu">
                 <li class="login"><a href="#">Войти</a></li>
                 <li class="compare"><a href="#">Сравнить</a></li>
                 <li class="basket"><a href="#">Корзина</a></li>
             </ul>
+            <!--Форма для попап Войти-->
+            <form action="" method="post">
+                <p>
+                    <label for="login">Логин</label>
+                    <input id="login" type="text" name="login" placeholder="Логин">
+                </p>
+                <p>
+                    <label for="password">Пароль</label>
+                    <input id="password" type="text" name="password" placeholder="Пароль">
+                </p>
+                <p>
+                    <label for="text-letter">Текст письма:</label>
+                    <input id="text-letter" type="text" name="letter" placeholder="В свободной форме">
+                </p>
+                <button type="button">Отправить</button>
+            </form>
             <!--Всплывающий каталог лист dropdown-catalog-list-->
             <ul class="dropdown-catalog-list">
                 <li class="catalog"><a href="catalog.html">Каталог товаров</a></li>
@@ -37,7 +59,6 @@
     <main>
         <section class="sliders">
             <ol>
-
                 <li class="slider"><button type="button">Слайд-1</button></li>
                 <li class="slider"><button type="button">Слайд-2</button></li>
                 <li class="slider"><button type="button">Слайд-3</button></li>
@@ -119,10 +140,18 @@
              если с сайта то через <a href="#"></a>-->
         </section>
         <section class="partner-contact">
-            <a class="partner-link" href="#"><img src="img/logo-djl.jpg" width="#" height="#"></a>
-            <a class="partner-link" href="#"><img src="img/logo-sp-gadgets.jpg" width="#" height="#"></a>
-            <a class="partner-link" href="#"><img src="img/logo-gopro.jpg" width="#" height="#"></a>
-            <a class="partner-link" href="#"><img src="img/logo-vive.jpg" width="#" height="#"></a>
+            <a class="partner-link" href="https://www.dji.com/ru">
+            <img src="img/logo-djl.jpg" width="260" height="100" alt="dji">
+            </a>
+            <a class="partner-link" href="http://www.sp-gadgets.com">
+            <img src="img/logo-sp-gadgets.jpg" width="260" height="100">
+            </a>
+            <a class="partner-link" href="https://gopro.ru">
+            <img src="img/logo-gopro.jpg" width="260" height="100">
+            </a>
+            <a class="partner-link" href="https://www.vive.com/ru/">
+            <img src="img/logo-vive.jpg" width="260" height="100">
+            </a>
         </section>
         <section class="about-us">
             <h2>О нас</h2>
@@ -138,14 +167,16 @@
         <section class="contact">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <img src="img/map.png" width="560" height="222">
+            <a href="https://yandex.ru/maps/213/moscow/?z=16&ll=37.535043%2C55.687003&l=map&origin=jsapi_2_1_64&from=api-maps&um=constructor%3ARDUQfAdTpPxf2D-3Zi5kxJBx49zXnQ6N&mode=usermaps">
+            <img src="img/map.png" alt="Карта, наше местонахождение" width="560" height="222">
+            </a>
             <a href="#">Напишите нам</a>
         </section>
     </main>
     <!--Подвал сайта-->
     <footer class="main-footer">
         <section class="footer-menu">
-            <img src="logo" width="#" height="#">
+            <img src="img/logo-devace-footer.png" width="163" height="36">
             <ul class="menu-service-footer">
                 <li class="dilivery"><a href="#">Доставка</a></li>
                 <li class="warranty"><a href="#">Гарантия</a></li>

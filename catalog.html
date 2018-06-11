@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Девайс каталог</title>
+    <link rel="stylesheet" href="css/css.css">
 </head>
 
 <body>
@@ -49,8 +50,44 @@
         <section class="filter">
             <ul class="filter">
                 <li class="cost">Стоимость</li>
-                <li class="color">Цвет</li>
-                <li class="bluetooth">Bluetooth</li>
+                <fieldset>
+                    <legend class="color">Цвет</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input type="checkbox" name="black" id="black" checked>
+                            <label for="black">Чёрный</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" name="white" id="white">
+                            <label for="white">Белый</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" name="blue" id="blue" checked>
+                            <label for="blue">Синий</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" name="red" id="red" checked>
+                            <label for="red">расный</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" name="pink" id="pink">
+                            <label for="pink">Розовый</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend class="bluetooth">Bluetooth</legend>
+                    <ul>
+                        <li class="bluetooth-yes">
+                            <input type="radio" name="bluetooth" id="bluetooth-yes" checked>
+                            <label for="bluetooth-yes">Есть</label>
+                        </li>
+                        <li class="bluetooth-no">
+                            <input type="radio" name="bluetooth" id="bluetooth-no">
+                            <label for="bluetooth-no">Нет</label>
+                        </li>
+                    </ul>
+                </fieldset>
             </ul>
             <!--Фильтр товара-->
             <section class="filter-goods">
@@ -74,14 +111,23 @@
                         <a href="#"><img src="img/follow-me-selfie.jpg" width="360" height="380"></a>
                     </div>
                 </ul>
-                <ol>
-                    <li class="up">
-                        <a href="#">Вперёд</a>
-                    </li>
+                <ul class="catalog-nav">
                     <li class="down">
-                        <a href="#">Назад</a>
+                        <a class="nav-down" href="#">Назад</a>
                     </li>
-                </ol>
+                    <li>
+                        <a href="#one">1</a>
+                    </li>
+                    <li>
+                        <a href="two">2</a>
+                    </li>
+                    <li>
+                        <a href="three">3</a>
+                    </li>
+                    <li class="up">
+                        <a class="nav-up" href="#">Вперёд</a>
+                    </li>
+                </ul>
             </section>
         </section>
 
