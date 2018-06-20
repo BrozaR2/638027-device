@@ -107,3 +107,55 @@ a {
     top: -18px;
     left: 57px;
 }
+/* Бегунок у формы*/
+.range__block {
+  position: relative;
+  width: 200px;
+}
+
+.range__first {
+  background: grey;
+  width: 200px;
+  height: 3px;
+}
+
+.range__second {
+  background: green;
+  width: 100px;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 50px
+}
+
+.prev,
+.next {
+  background-color: #ffffff;
+  border-color: #000000;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top:-5px;
+}
+
+.prev:before,
+.next:before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: #000000;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+.prev {
+  left: 142px;
+}
+
+.next {
+  left: 50px;
+}
+/*---------------------------------------*/
