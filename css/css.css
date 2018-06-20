@@ -1,8 +1,108 @@
+@font-face {
+    font-weight: 700;
+    font-family: "Gilroy ExtraBold";
+    font-style: normal;
+    src: url(../fonts/gilroyextrabold.woff) format("woff"), url(../fonts/gilroyextrabold.woff2) format("woff2")
+}
+
+@font-face {
+    font-weight: lighter;
+    font-family: "Gilroy Light";
+    font-style: normal;
+    src: url(../fonts/gilroylight.woff) format("woff"), url(../fonts/gilroylight.woff2) format("woff2")
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: "Open Sans";
+    font-style: normal;
+    src: url(../fonts/opensans.woff) format("woff"), url(../fonts/opensans.woff2) format("woff2")
+}
+
+@font-face {
+    font-weight: lighter;
+    font-family: "Open Sans Light";
+    font-style: normal;
+    src: url(../fonts/opensanslight.woff) format("woff"), url(../fonts/opensanslight.woff2) format("woff2")
+}
+
+
 body {
-    background-color:
+    margin: 0;
+
+    font-family: "Open Sans Light", "Arial", sans-serif;
+    color: #000000;
+    width: 1440px;
+    font-size: 15px;
+    line-height: 24px;
+    background-color: #ffffff;
 }
-/*
+
+h1,
+h2 {
+    font-size: 47px;
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    color: #000000;
+}
+
+.main-header {
+    position: relative;
+    width: 1160px;
+    height: 299px;
+    height: 265px;
+    margin-top: 40px;
+    margin-left: 80px;
+    padding-top: 34px;
+    padding-left: 55px;
+    padding-right: 55px;
+    background-color: #f7e296;
+}
+
+.catalog-header {
+    position: relative;
+    width: 1160px;
+    height: 152px;
+    margin-top: 40px;
+    padding-top: 34px;
+    background-color: #f7e296;
+}
+
+.main-menu {
+    float: right;
+    width: 500px;
+    margin-top: 6px;
+}
+
+.main-menu a {
+    float: right;
+    margin-left: 36px;
+    padding-left: 26px;
+    line-height: 36px;
+    color: #000000;
+}
+li.enter,
+li.exit {
+    float: left;
+    margin-left:
+}
+
+
+
 li {
-    list-style-type:none;
+    list-style-type: none;
 }
-*/
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+/* Логотипы картинки*/
+
+.logo {
+    position: absolute;
+    top: -18px;
+    left: 57px;
+}
