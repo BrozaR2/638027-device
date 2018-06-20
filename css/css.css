@@ -1,3 +1,10 @@
+body {
+    min-width: 1240px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Open Sans Light", "Arial", sans-serif
+}
+
 @font-face {
     font-weight: 700;
     font-family: "Gilroy ExtraBold";
@@ -26,65 +33,11 @@
     src: url(../fonts/opensanslight.woff) format("woff"), url(../fonts/opensanslight.woff2) format("woff2")
 }
 
-
-body {
-    margin: 0;
-
-    font-family: "Open Sans Light", "Arial", sans-serif;
-    color: #000000;
-    width: 1440px;
-    font-size: 15px;
-    line-height: 24px;
-    background-color: #ffffff;
-}
-
 h1,
 h2 {
     font-size: 47px;
     font-family: "Gilroy ExtraBold", "Arial", sans-serif;
     color: #000000;
-}
-
-.main-header {
-    position: relative;
-    width: 1160px;
-    height: 299px;
-    height: 265px;
-    margin-top: 40px;
-    margin-left: 80px;
-    padding-top: 34px;
-    padding-left: 55px;
-    padding-right: 55px;
-    background-color: #f7e296;
-}
-
-.catalog-header {
-    position: relative;
-    width: 1160px;
-    height: 152px;
-    margin-top: 40px;
-    padding-top: 34px;
-    background-color: #f7e296;
-}
-
-.main-menu {
-    float: right;
-    width: 500px;
-    margin-top: 6px;
-}
-
-.main-menu a {
-    float: right;
-    margin-left: 36px;
-    padding-left: 26px;
-    line-height: 36px;
-    color: #000000;
-}
-
-li.enter,
-li.exit {
-    float: left;
-    margin-left:
 }
 
 
@@ -100,62 +53,66 @@ a {
 
 
 
-/* Логотипы картинки*/
+/* Логотипы картинки
 
 .logo {
     position: absolute;
     top: -18px;
     left: 57px;
 }
-/* Бегунок у формы*/
+
+/*---- Бегунок у формы----
+
 .range__block {
-  position: relative;
-  width: 200px;
+    position: relative;
+    width: 200px;
 }
 
 .range__first {
-  background: grey;
-  width: 200px;
-  height: 3px;
+    background: grey;
+    width: 200px;
+    height: 3px;
 }
 
 .range__second {
-  background: green;
-  width: 100px;
-  height: 3px;
-  position: absolute;
-  top: 0;
-  left: 50px
+    background: green;
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 50px
 }
 
 .prev,
 .next {
-  background-color: #ffffff;
-  border-color: #000000;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  position: absolute;
-  top:-5px;
+    background-color: #ffffff;
+    border-color: #000000;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
 }
 
 .prev:before,
 .next:before {
-  content: '';
-  position: absolute;
-  width: 3px;
-  height: 3px;
-  background-color: #000000;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%)
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: #000000;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
+
 .prev {
-  left: 142px;
+    left: 142px;
 }
 
 .next {
-  left: 50px;
+    left: 50px;
 }
+
 /*---------------------------------------*/
